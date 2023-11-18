@@ -6,8 +6,10 @@ import java.util.Objects;
 
 public class NotaFiscal {
     private String cnpj;
+    private int id;
     private LocalDateTime horaDeEmissao;
     private List<Produto> produtos = new ArrayList<Produto>();
+    private static int id_count = 1;
 
     public String getCnpj() {
         return cnpj;
@@ -36,7 +38,7 @@ public class NotaFiscal {
         for (Produto prod : produtos){
             if (Objects.equals(prod.getId(), id)) return prod;
         }
-        return new Produto(null, null, null);
+        return null;
     }
     public List<Produto> getProdutoBySpecs(Specs specs){
         List<Produto> produtosMatch = new ArrayList<Produto>();
@@ -48,5 +50,9 @@ public class NotaFiscal {
     public NotaFiscal(String cnpj){
         this.cnpj = cnpj;
         this.horaDeEmissao = LocalDateTime.now();
+        this.id = id_count++;
+    }
+    public int getId() {
+        return id;
     }
 }
