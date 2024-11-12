@@ -1,4 +1,6 @@
-
+**/.idea
+**/out
+*.iml
 .idea/bertoti.iml
 .idea/misc.xml
 .idea/modules.xml
