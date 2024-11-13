@@ -1,6 +1,6 @@
 # Singleton
 ## Explicação:
-Uma demonstração do Design Pattern: Singleton
+Uma demonstração do Design Pattern: SINGLETON
 
 O código instancia uma classe singleton.
 

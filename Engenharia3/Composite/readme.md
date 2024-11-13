@@ -1,6 +1,6 @@
 # Composite
 ## Explicação:
-Uma demonstração do Design Pattern: Composite
+Uma demonstração do Design Pattern: COMPOSITE
 
 O código inicia algumas classes de Manager e Funcionarios, e conta quantos
 membros da empresa estão abaixo de algum outro membro.
