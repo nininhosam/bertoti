@@ -1,5 +1,7 @@
 **/.idea
 **/out
+**/.gradle
+**/build
 *.iml
 .idea/bertoti.iml
 .idea/misc.xml
